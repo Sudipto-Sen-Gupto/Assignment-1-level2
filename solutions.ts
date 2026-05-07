@@ -62,5 +62,23 @@ const checkType=(input:StringOrNumber)=>{
 
 //   console.log(checkType("ff"));
 
+//problem 4
+// Write a generic function getProperty that takes an object and a key, then returns the value of that key. Use constraints to ensure the key exists on the object.
+
+// // Sample Input:
+// const user = { id: 1, name: "John Doe", age: 21 };
+// getProperty(user, "name");
+
+// // Sample Output:
+// "John Doe";
+
+const getProperty=<Object,Key extends keyof Object>(object:Object,key:Key):Object[Key]=>{
+    return object[key]
+}
+// const detail={
+//     name:'gaurav',
+//     age:22
+// }
+// console.log(getProperty({name:'gangaram'},'name'));
 
 
