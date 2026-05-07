@@ -41,10 +41,10 @@ class Parents{
              this.bike=bike
         }
   }
-
+```
   ## Polymorphism
 
-Polymorphism is like a *chameleon*. It means we can use one method in different classes with different behaviors.
+Polymorphism is like a chameleon. It means we can use one method in different classes with different behaviors.
 
 In simple words, the same method name can work differently depending on the object.
 
@@ -103,6 +103,7 @@ class MyPlayer extends MusicPlayer {
 const mymusic = new MyPlayer();
 mymusic.play();
 
+```
 ## Encapsulation
 
 Encapsulation is the process of binding data and methods together and protecting the data from direct outside access.
@@ -125,11 +126,6 @@ const account = new BankAccount();
 account.deposit(500);
 console.log(account.getBalance());
 ```
-
-
-Conclusion
-
-The four pillars of OOP—Inheritance, Polymorphism, Abstraction, and Encapsulation—help in managing logic and reducing complexity in large-scale TypeScript projects. They make code more reusable, structured, and maintainable. Inheritance reduces duplication, Polymorphism allows flexible behavior, Abstraction hides unnecessary details, and Encapsulation protects data from unwanted access.
 
 ## Conclusion
 
