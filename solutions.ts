@@ -111,3 +111,39 @@ const getProperty=<Object,Key extends keyof Object>(object:Object,key:Key):Objec
     }
 
     // console.log(toggleReadStatus({title:'physics',author:'rajib',publishedYear:2034}));
+
+    //problem 6
+//     Create a class Person with a name and age. Then, create a subclass Student that adds a grade property. Include a method getDetails in the Student class that returns a string with the student's name, age, and grade.
+
+// // Sample Input:
+// const student = new Student("Alice", 20, "A");
+// student.getDetails();
+
+// // Sample Output:
+// "Name: Alice, Age: 20, Grade: A";
+
+class Person{
+      Name:string;
+      Age:number;
+     
+      constructor(Name:string,Age:number){
+            this.Name= Name;
+            this.Age= Age;
+           
+      }
+}
+
+class Student extends Person{
+       Grade:string;
+       constructor(Name:string,Age:number,Grade:string){
+              super(Name,Age)
+              this.Grade=Grade
+       }
+
+       getDetails(){
+                return `Name: ${this.Name},Age: ${this.Age},Grade: ${this.Grade}`
+       }
+}
+
+const student=new Student('Dip',27,'A+');
+console.log(student.getDetails());
