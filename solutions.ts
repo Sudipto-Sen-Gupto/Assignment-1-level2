@@ -6,9 +6,9 @@
 
 // // Sample Output:
 // [2, 4, 6]
-  type NumberOfArray=number[]
- const filterEvenNumbers=(array:NumberOfArray):NumberOfArray=>{
-        const newArray:NumberOfArray=[];
+ 
+ const filterEvenNumbers=(array:number[]):number[]=>{
+        const newArray:number[]=[];
         for(let i=1; i<array.length;i++){
              if(array[i]%2===0){
                    newArray.push(array[i])
@@ -17,4 +17,20 @@
           return newArray
         
  }
- console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+//  console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+//problem 2
+// Write a function reverseString that takes a string as input and returns the reversed version of that string.
+
+// // Sample Input:
+// reverseString("typescript");
+
+// // Sample Output:
+// "tpircsepyt";
+
+   const reverseString=(input:string):string=>{
+             const reversed=input.split('').reverse().join('');
+             return reversed
+   }
+    //   console.log(reverseString('typescript'));
+
